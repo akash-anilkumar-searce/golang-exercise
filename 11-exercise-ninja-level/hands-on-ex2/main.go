@@ -29,9 +29,9 @@ func main() {
 
 
 func toJSONprog(a interface{}) ([]byte, error) {
-	bs, err := json.Marshal(a)
+	bs,err :=json.Marshal(a)
 	if err != nil {
-		return []byte{}, fmt.Errorf("error is present in toJSONprog function: %v", err)
+		return []byte{},fmt.Errorf("error is detected as %v",err)
 	}
-	return bs, nil
+	return bs,nil
 }
