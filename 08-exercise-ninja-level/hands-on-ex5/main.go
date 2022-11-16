@@ -67,7 +67,7 @@ func main() {
 		}
 	}
 
-	fmt.Println("-------")
+
 
 	sort.Sort(ByAge(users))
 	for _, u := range users {

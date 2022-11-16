@@ -18,13 +18,13 @@ func TestCenteredAvg(t *testing.T){
 	}
 }
 
-func Egtestavg(){
+func ExampleCenteredAvg(){
 	fmt.Println(CenteredAvg([]int{10,20,30,40}),20)
 	//OUTPUT 
 	//20
 }
 
-func Benchavg(b *testing.B){
+func BenchmarkCenteredAvg(b *testing.B){
 	for i:=0;i<b.N;i++{
 		CenteredAvg([]int{100,200,300,400,500})
 	}

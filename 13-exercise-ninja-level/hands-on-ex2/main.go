@@ -1,18 +1,15 @@
-package word
+package main
 
-import "strings"
+import (
+	"fmt"
+  "13-exercise-hands-on-ex2/word"
+  "13-exercise-hands-on-ex2/quote"
+)
 
-// no need to write an example for this one
-// writing a test for this one is a bonus challenge; harder
-func UseCount(s string) map[string]int {
-	xs := strings.Fields(s)
-	m := make(map[string]int)
-	for _, v := range xs {
-		m[v]++
+func main() {
+	fmt.Println(word.Count(quote.SunAlso))
+
+	for k, v := range word.UseCount(quote.SunAlso) {
+		fmt.Println(v, k)
 	}
-	return m
-}
-
-func Count(s string) int {
-	// write the code for this func
 }
